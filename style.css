@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+div {
+  display: flex;
+  height: 100vh;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all;
+  -webkit-transition: all 0.9s ease-in-out;
+  opacity: 0.9;
+}
+
+.play:hover {
+  width: 100vw;
+}
+
+.xbox:hover {
+  width: 100vw;
+}
+
+.buy {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  height: 70px;
+  width: 200px;
+  background-color: transparent;
+  border: solid 3px white;
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 50px;
+  color: white;
+}
+
+div.play button:hover {
+  cursor: pointer;
+  background-color: #b74f88;
+}
+
+div.xbox button:hover {
+  cursor: pointer;
+  background-color: #1e791a;
+}
+
+@media (width < 300px){
+  h2{
+    font-size: 20px
+  }
+
+  button {
+    font-size: 15px;
+    height: 30px;
+    width: 5rem;
+  }
+
+  
+}
